@@ -14,7 +14,7 @@ function AboutMe() {
 					I like web development as it gives me joy and brings ideas to my mind
 					and it makes me feel stressed out and relaxed. I know a lot of
 					front-end libraries as you can see in the{" "}
-					<a href="skills">skills section </a>.
+					<a href="#skills">skills section </a>.
 				</p>
 				<div className="imgContainer" style={{ background: "#31344b" }}>
 					<LazyLoadImage src="./images/about.jpg" alt="" />

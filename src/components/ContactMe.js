@@ -16,7 +16,7 @@ function ContactMe() {
 					<li className="contactMe__socialsLink">
 						<a
 							href="https://github.com/samyak003"
-							target="_blank"
+							target="blank"
 							rel="noreferrer"
 						>
 							<section>
@@ -30,7 +30,7 @@ function ContactMe() {
 					<li className="contactMe__socialsLink">
 						<a
 							href="https://www.linkedin.com/in/samyak003/"
-							target="_blank"
+							target="blank"
 							rel="noreferrer"
 						>
 							<section>
@@ -44,7 +44,7 @@ function ContactMe() {
 					<li className="contactMe__socialsLink">
 						<a
 							href="https://instagram.com/samyak003"
-							target="_blank"
+							target="blank"
 							rel="noreferrer"
 						>
 							<section>
@@ -58,7 +58,7 @@ function ContactMe() {
 					<li className="contactMe__socialsLink">
 						<a
 							href="https://twitter.com/samyak003"
-							target="_blank"
+							target="blank"
 							rel="noreferrer"
 						>
 							<section>

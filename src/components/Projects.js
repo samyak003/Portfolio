@@ -31,7 +31,7 @@ function Projects() {
 									<p>
 										<a
 											href="https://amazonclone.samyak003.in"
-											target="_blank"
+											target="blank"
 											rel="noreferrer"
 										>
 											Project Link
@@ -40,7 +40,7 @@ function Projects() {
 									<p>
 										<a
 											href="https://github.com/samyak003/amazon-clone"
-											target="_blank"
+											target="blank"
 											rel="noreferrer"
 										>
 											Github Repo
@@ -72,7 +72,7 @@ function Projects() {
 									<p>
 										<a
 											href="https://music.samyak003.in"
-											target="_blank"
+											target="blank"
 											rel="noreferrer"
 										>
 											Project Link
@@ -81,7 +81,7 @@ function Projects() {
 									<p>
 										<a
 											href="https://github.com/samyak003/Music"
-											target="_blank"
+											target="blank"
 											rel="noreferrer"
 										>
 											Github Repo
@@ -114,7 +114,7 @@ function Projects() {
 									<p>
 										<a
 											href="https://whatsappclone.samyak003.in"
-											target="_blank"
+											target="blank"
 											rel="noreferrer"
 										>
 											Project Link
@@ -123,7 +123,7 @@ function Projects() {
 									<p>
 										<a
 											href="https://github.com/samyak003/Whatsapp-Clone"
-											target="_blank"
+											target="blank"
 											rel="noreferrer"
 										>
 											Github Repo
@@ -157,7 +157,7 @@ function Projects() {
 									<p>
 										<a
 											href="https://instagramclone.samyak003.in"
-											target="_blank"
+											target="blank"
 											rel="noreferrer"
 										>
 											Project Link
@@ -166,7 +166,7 @@ function Projects() {
 									<p>
 										<a
 											href="https://github.com/samyak003/Instagram-Clone"
-											target="_blank"
+											target="blank"
 											rel="noreferrer"
 										>
 											Github Repo
