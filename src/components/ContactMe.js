@@ -78,24 +78,26 @@ function ContactMe() {
 				>
 					<input type="hidden" name="form-name" value="contact-form" />
 					<div className="inputField">
-						<label htmlFor="name">Name</label>
+						<label htmlFor="name" id="name">
+							Name
+						</label>
 						<br />
 						<input type="text" name="name" required />
 					</div>
 					<div className="inputField">
 						<label htmlFor="email">Email</label>
 						<br />
-						<input type="email" name="email" required />
+						<input type="email" id="email" name="email" required />
 					</div>
 					<div className="inputField">
 						<label htmlFor="contactno">Contact No.</label>
 						<br />
-						<input type="number" name="contactno" required />
+						<input type="number" name="contactno" id="contactno" required />
 					</div>
 					<div className="inputField">
 						<label htmlFor="description">Description</label>
 						<br />
-						<textarea rows="5" name="description" required />
+						<textarea rows="5" name="description" id="description" required />
 					</div>
 					<div className="inputField">
 						<button type="submit" className="btn">
