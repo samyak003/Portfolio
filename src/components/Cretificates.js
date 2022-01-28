@@ -1,5 +1,6 @@
-import React from "react";
-import { LazyLoadImage } from "react-lazy-load-image-component";
+import React, { Suspense } from "react";
+import Loading from "./Loading";
+const Img = React.lazy(() => import("./Img"));
 
 function Cretificates() {
 	const certificates = [
@@ -35,7 +36,9 @@ function Cretificates() {
 				{certificates.map((certificate, index) => (
 					<div className="card" key={index}>
 						<div className="imgContainer">
-							<LazyLoadImage src={certificate.img} alt="" />
+							<Suspense fallback={<Loading />}>
+								<Img src={certificate.img} alt="" />
+							</Suspense>
 							<div className="img-overlay">
 								<p>A piece of paper</p>
 							</div>

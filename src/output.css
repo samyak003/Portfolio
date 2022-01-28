@@ -364,6 +364,8 @@ label {
 .aboutMe .imgContainer {
   position: relative;
   max-width: 500px;
+  min-height: 200px;
+  min-width: 200px;
   overflow: hidden;
   transition: all 1s linear;
   border: 0.0625rem solid transparent;
@@ -488,6 +490,8 @@ label {
   max-width: 70px;
   width: 100%;
   margin-right: 30px;
+  min-height: 50px;
+  min-width: 50px;
 }
 @media screen and (max-width: 1000px) {
   .skills .cards {
@@ -528,6 +532,8 @@ label {
 .certificates .card .imgContainer {
   position: relative;
   max-width: 400px;
+  min-height: 200px;
+  min-width: 200px;
   margin: 10px auto;
   overflow: hidden;
 }
@@ -560,6 +566,8 @@ label {
   position: relative;
   overflow: hidden;
   max-width: 600px;
+  min-height: 200px;
+  min-width: 200px;
 }
 .project .imgContainer:hover {
   border-color: #e6e7ee;
@@ -598,6 +606,8 @@ label {
   }
   .project .imgContainer {
     margin-bottom: 20px;
+    min-height: 200px;
+    min-width: 200px;
   }
 }
 

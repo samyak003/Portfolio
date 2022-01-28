@@ -331,6 +331,8 @@ label {
 	.imgContainer {
 		position: relative;
 		max-width: 500px;
+		min-height: 200px;
+		min-width: 200px;
 		overflow: hidden;
 		transition: all 1s linear;
 		@include theme1();
@@ -442,6 +444,8 @@ label {
 				max-width: 70px;
 				width: 100%;
 				margin-right: 30px;
+				min-height: 50px;
+				min-width: 50px;
 			}
 		}
 	}
@@ -480,6 +484,8 @@ label {
 		.imgContainer {
 			position: relative;
 			max-width: 400px;
+			min-height: 200px;
+			min-width: 200px;
 			margin: 10px auto;
 			overflow: hidden;
 		}
@@ -514,6 +520,8 @@ label {
 		position: relative;
 		overflow: hidden;
 		max-width: 600px;
+		min-height: 200px;
+		min-width: 200px;
 		&:hover {
 			@include theme2();
 		}
@@ -546,6 +554,8 @@ label {
 		}
 		.imgContainer {
 			margin-bottom: 20px;
+			min-height: 200px;
+			min-width: 200px;
 		}
 	}
 }

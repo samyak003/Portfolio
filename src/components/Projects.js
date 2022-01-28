@@ -1,5 +1,6 @@
-import React from "react";
-import { LazyLoadImage } from "react-lazy-load-image-component";
+import React, { Suspense } from "react";
+import Loading from "./Loading";
+const Img = React.lazy(() => import("./Img"));
 
 function Projects() {
 	const projects = [
@@ -67,7 +68,10 @@ function Projects() {
 							<h2 className="projectTitle">{project.title}</h2>
 							<main>
 								<div className="imgContainer">
-									<LazyLoadImage src={project.img} alt="" />
+									<Suspense fallback={<Loading />}>
+										<Img src={project.img} alt="" />
+									</Suspense>
+
 									<div className="img-overlay">
 										<p>Just a Screenshot</p>
 									</div>

@@ -1,5 +1,6 @@
-import React from "react";
-import { LazyLoadImage } from "react-lazy-load-image-component";
+import React, { Suspense } from "react";
+import Loading from "./Loading";
+const Img = React.lazy(() => import("./Img"));
 
 function Skills() {
 	const skills = [
@@ -20,7 +21,9 @@ function Skills() {
 					{skills.map((skill, index) => (
 						<li className="card" key={index}>
 							<div className="logo-container">
-								<LazyLoadImage src={skill.img} alt="" />
+								<Suspense fallback={<Loading />}>
+									<Img src={skill.img} alt="" />
+								</Suspense>
 							</div>
 							<div className="detail">
 								<p className="title">{skill.title}</p>
