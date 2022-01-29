@@ -78,11 +78,9 @@ function ContactMe() {
 				>
 					<input type="hidden" name="form-name" value="contact-form" />
 					<div className="inputField">
-						<label htmlFor="name" id="name">
-							Name
-						</label>
+						<label htmlFor="name">Name</label>
 						<br />
-						<input type="text" name="name" required />
+						<input type="text" name="name" id="name" required />
 					</div>
 					<div className="inputField">
 						<label htmlFor="email">Email</label>

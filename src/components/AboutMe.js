@@ -17,7 +17,7 @@ function AboutMe() {
 					front-end libraries as you can see in the{" "}
 					<a href="#skills">skills section </a>.
 				</p>
-				<div className="imgContainer" style={{ background: "#31344b" }}>
+				<div className="imgContainer">
 					<Suspense fallback={<Loading />}>
 						<Img src="./images/about.jpg" alt="" />
 					</Suspense>

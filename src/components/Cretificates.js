@@ -20,7 +20,7 @@ function Cretificates() {
 			title: "HTML & CSS Tutorial and Projects Course",
 			year: "2020",
 			from: "Udemy",
-			img: "./images/freecodecamp.webp",
+			img: "./images/udemy.webp",
 		},
 		{
 			title: "Error 404 (Aparoksha)",

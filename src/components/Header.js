@@ -10,6 +10,14 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 
 function Header() {
+	const links = [
+		{ href: "#main", title: "Main", icon: faHome },
+		{ href: "#aboutMe", title: "About Me", icon: faUserCircle },
+		{ href: "#skills", title: "Skills", icon: faPencilRuler },
+		{ href: "#projects", title: "Projects", icon: faTasks },
+		{ href: "#certificates", title: "Certificates", icon: faCertificate },
+		{ href: "#contactMe", title: "Contact Me", icon: faIdBadge },
+	];
 	const toggleSmallScr = () => {
 		if (window.innerWidth <= 700) {
 			toggle();
@@ -29,42 +37,14 @@ function Header() {
 						<div className="bar3"></div>
 					</div>
 				</li>
-				<li className="header__listItem" onClick={() => toggleSmallScr()}>
-					<a href="#main">
-						<FontAwesomeIcon icon={faHome} />
-						<p>Main</p>
-					</a>
-				</li>
-				<li className="header__listItem" onClick={() => toggleSmallScr()}>
-					<a href="#aboutMe">
-						<FontAwesomeIcon icon={faUserCircle} />
-						<p>About Me</p>
-					</a>
-				</li>
-				<li className="header__listItem" onClick={() => toggleSmallScr()}>
-					<a href="#skills">
-						<FontAwesomeIcon icon={faPencilRuler} />
-						<p>Skills</p>
-					</a>
-				</li>
-				<li className="header__listItem" onClick={() => toggleSmallScr()}>
-					<a href="#projects">
-						<FontAwesomeIcon icon={faTasks} />
-						<p>Projects</p>
-					</a>
-				</li>
-				<li className="header__listItem" onClick={() => toggleSmallScr()}>
-					<a href="#certificates">
-						<FontAwesomeIcon icon={faCertificate} />
-						<p>Certificates</p>
-					</a>
-				</li>
-				<li className="header__listItem" onClick={() => toggleSmallScr()}>
-					<a href="#contactMe">
-						<FontAwesomeIcon icon={faIdBadge} />
-						<p>Contact Me</p>
-					</a>
-				</li>
+				{links.map((link, index) => (
+					<li className="header__listItem" onClick={() => toggleSmallScr()}>
+						<a href={link.href}>
+							<FontAwesomeIcon icon={link.icon} />
+							<p>{link.title}</p>
+						</a>
+					</li>
+				))}
 			</ul>
 		</section>
 	);
