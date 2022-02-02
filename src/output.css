@@ -63,6 +63,7 @@ textarea {
   border-radius: 10px;
   background-color: var(--bg-color);
   border-radius: 10px;
+  color: var(--text-color);
 }
 input:hover, input:focus,
 textarea:hover,
@@ -390,6 +391,9 @@ label {
     align-items: center;
     text-align: center;
   }
+}
+.contactMe {
+  margin-bottom: 0;
 }
 .contactMe main {
   padding: 10px;

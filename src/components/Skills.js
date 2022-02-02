@@ -10,8 +10,9 @@ function Skills() {
 		{ title: "React", img: "./images/react.png" },
 		{ title: "Scss", img: "./images/scss.png" },
 		{ title: "Python", img: "./images/python.png" },
-		{ title: "NPM", img: "./images/npm.png" },
+		{ title: "Firebase", img: "./images/firebase.png" },
 		{ title: "Git", img: "./images/git.png" },
+		{ title: "NPM", img: "./images/npm.png" },
 	];
 	return (
 		<div className="skills section" id="skills">
