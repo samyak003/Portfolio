@@ -11,26 +11,27 @@ html {
 }
 
 body {
-  background-color: #e6e7ee;
+  background-color: var(--bg-color);
   font-family: "Raleway", sans-serif;
-  color: #31344b;
+  color: var(--text-color);
   letter-spacing: 1px;
+  transition: background-color 0.3s linear;
 }
 
 h1 {
-  font-size: clamp(2.8rem, 3.5rem, 4rem);
+  font-size: 3.5rem;
   line-height: 3.5rem;
 }
 
 h2,
 label {
   line-height: 2.2rem;
-  font-size: clamp(2rem, 2.3rem, 2.8rem);
+  font-size: 2.3rem;
 }
 
 p {
   line-height: 1.7rem;
-  font-size: clamp(1rem, 1.3rem, 1.7rem);
+  font-size: 1.3rem;
   font-weight: 600;
 }
 
@@ -58,17 +59,15 @@ textarea {
   outline: none;
   border: none;
   border: 0.0625rem solid transparent;
-  border-color: #d1d9e6;
-  box-shadow: 6px 6px 12px #b8b9be, -6px -6px 12px #fff;
+  box-shadow: var(--shadow1);
   border-radius: 10px;
-  background-color: #e6e7ee;
+  background-color: var(--bg-color);
   border-radius: 10px;
 }
 input:hover, input:focus,
 textarea:hover,
 textarea:focus {
-  border-color: #e6e7ee;
-  box-shadow: inset 2px 2px 5px #b8b9be, inset -3px -3px 7px #fff;
+  box-shadow: var(--shadow2);
 }
 
 label {
@@ -90,16 +89,14 @@ label {
   margin: 10px 0;
   font-weight: bold;
   border: 0.0625rem solid transparent;
-  border-color: #d1d9e6;
-  box-shadow: 6px 6px 12px #b8b9be, -6px -6px 12px #fff;
+  box-shadow: var(--shadow1);
   border-radius: 10px;
-  background-color: #e6e7ee;
+  background-color: var(--bg-color);
   font-family: "Raleway", sans-serif;
-  color: #31344b;
+  color: var(--text-color);
 }
 .btn:hover {
-  border-color: #e6e7ee;
-  box-shadow: inset 2px 2px 5px #b8b9be, inset -3px -3px 7px #fff;
+  box-shadow: var(--shadow2);
 }
 
 .section {
@@ -110,16 +107,14 @@ label {
 .section .heading {
   place-self: center;
   border: 0.0625rem solid transparent;
-  border-color: #d1d9e6;
-  box-shadow: 6px 6px 12px #b8b9be, -6px -6px 12px #fff;
+  box-shadow: var(--shadow1);
   border-radius: 10px;
-  background-color: #e6e7ee;
+  background-color: var(--bg-color);
   padding: 15px;
   margin-top: 20px;
 }
 .section .heading:hover {
-  border-color: #e6e7ee;
-  box-shadow: inset 2px 2px 5px #b8b9be, inset -3px -3px 7px #fff;
+  box-shadow: var(--shadow2);
 }
 
 .inputField {
@@ -154,13 +149,12 @@ label {
   top: 0;
   left: 0;
   min-height: 100%;
-  background-color: #e6e7ee;
+  background-color: var(--bg-color);
   z-index: 10;
   border: 0.0625rem solid transparent;
-  border-color: #d1d9e6;
-  box-shadow: 6px 6px 12px #b8b9be, -6px -6px 12px #fff;
+  box-shadow: var(--shadow1);
   border-radius: 10px;
-  background-color: #e6e7ee;
+  background-color: var(--bg-color);
 }
 
 .header__list {
@@ -176,17 +170,16 @@ label {
 .header__listItem {
   margin: 10px auto;
   border: 0.0625rem solid transparent;
-  border-color: #d1d9e6;
-  box-shadow: 6px 6px 12px #b8b9be, -6px -6px 12px #fff;
+  box-shadow: var(--shadow1);
   border-radius: 10px;
-  background-color: #e6e7ee;
+  background-color: var(--bg-color);
 }
 .header__listItem a {
   display: flex;
   align-items: center;
   justify-content: flex-start;
   font-size: 1.3rem;
-  color: #31344b;
+  color: var(--text-color);
   padding: 10px;
 }
 .header__listItem a p {
@@ -195,8 +188,7 @@ label {
   display: none;
 }
 .header__listItem:hover {
-  border-color: #e6e7ee;
-  box-shadow: inset 2px 2px 5px #b8b9be, inset -3px -3px 7px #fff;
+  box-shadow: var(--shadow2);
 }
 
 .open .header__list .header__listItem {
@@ -206,8 +198,7 @@ label {
   display: block;
 }
 .open .header__list .header__listItem:hover {
-  border-color: #e6e7ee;
-  box-shadow: inset 2px 2px 5px #b8b9be, inset -3px -3px 7px #fff;
+  box-shadow: var(--shadow2);
 }
 
 @media screen and (max-width: 700px) {
@@ -252,7 +243,7 @@ label {
 .bar3 {
   width: 30px;
   height: 5px;
-  background-color: #31344b;
+  background-color: var(--text-color);
   transition: 0.4s;
 }
 
@@ -294,15 +285,13 @@ label {
 
 .main__heading {
   border: 0.0625rem solid transparent;
-  border-color: #d1d9e6;
-  box-shadow: 6px 6px 12px #b8b9be, -6px -6px 12px #fff;
+  box-shadow: var(--shadow1);
   border-radius: 10px;
-  background-color: #e6e7ee;
+  background-color: var(--bg-color);
   padding: 20px;
 }
 .main__heading:hover {
-  border-color: #e6e7ee;
-  box-shadow: inset 2px 2px 5px #b8b9be, inset -3px -3px 7px #fff;
+  box-shadow: var(--shadow2);
 }
 .main__heading span {
   font-weight: 400;
@@ -340,10 +329,9 @@ label {
 }
 .aboutMe__para {
   border: 0.0625rem solid transparent;
-  border-color: #d1d9e6;
-  box-shadow: 6px 6px 12px #b8b9be, -6px -6px 12px #fff;
+  box-shadow: var(--shadow1);
   border-radius: 10px;
-  background-color: #e6e7ee;
+  background-color: var(--bg-color);
   letter-spacing: 1.3px;
   font-size: 1.2rem;
   line-height: 2rem;
@@ -352,8 +340,7 @@ label {
   padding: 20px;
 }
 .aboutMe__para:hover {
-  border-color: #e6e7ee;
-  box-shadow: inset 2px 2px 5px #b8b9be, inset -3px -3px 7px #fff;
+  box-shadow: var(--shadow2);
 }
 .aboutMe .imgContainer {
   position: relative;
@@ -363,17 +350,15 @@ label {
   overflow: hidden;
   transition: all 1s linear;
   border: 0.0625rem solid transparent;
-  border-color: #d1d9e6;
-  box-shadow: 6px 6px 12px #b8b9be, -6px -6px 12px #fff;
+  box-shadow: var(--shadow1);
   border-radius: 10px;
-  background-color: #e6e7ee;
+  background-color: var(--bg-color);
 }
 .aboutMe .imgContainer:hover {
-  border-color: #e6e7ee;
-  box-shadow: inset 2px 2px 5px #b8b9be, inset -3px -3px 7px #fff;
+  box-shadow: var(--shadow2);
 }
 .aboutMe a {
-  color: #31344b;
+  color: var(--text-color);
   font-weight: bold;
 }
 .aboutMe a:hover {
@@ -416,20 +401,18 @@ label {
   font-size: 2rem;
   margin-top: 30px;
   border: 0.0625rem solid transparent;
-  border-color: #d1d9e6;
-  box-shadow: 6px 6px 12px #b8b9be, -6px -6px 12px #fff;
+  box-shadow: var(--shadow1);
   border-radius: 10px;
-  background-color: #e6e7ee;
+  background-color: var(--bg-color);
 }
 .contactMe__socialsLink:hover {
-  border-color: #e6e7ee;
-  box-shadow: inset 2px 2px 5px #b8b9be, inset -3px -3px 7px #fff;
+  box-shadow: var(--shadow2);
 }
 .contactMe__socialsLink h2 {
   margin-bottom: 20px;
 }
 .contactMe__socialsLink a {
-  color: #31344b;
+  color: var(--text-color);
 }
 .contactMe__socialsLink a section {
   padding: 15px;
@@ -471,14 +454,12 @@ label {
   height: 100px;
   padding: 20px;
   border: 0.0625rem solid transparent;
-  border-color: #d1d9e6;
-  box-shadow: 6px 6px 12px #b8b9be, -6px -6px 12px #fff;
+  box-shadow: var(--shadow1);
   border-radius: 10px;
-  background-color: #e6e7ee;
+  background-color: var(--bg-color);
 }
 .skills .cards .card:hover {
-  border-color: #e6e7ee;
-  box-shadow: inset 2px 2px 5px #b8b9be, inset -3px -3px 7px #fff;
+  box-shadow: var(--shadow2);
 }
 .skills .cards .card .logo-container {
   max-width: 70px;
@@ -513,15 +494,13 @@ label {
   margin: 0 auto;
   padding: 20px;
   border: 0.0625rem solid transparent;
-  border-color: #d1d9e6;
-  box-shadow: 6px 6px 12px #b8b9be, -6px -6px 12px #fff;
+  box-shadow: var(--shadow1);
   border-radius: 10px;
-  background-color: #e6e7ee;
+  background-color: var(--bg-color);
   max-width: 500px;
 }
 .certificates .card:hover {
-  border-color: #e6e7ee;
-  box-shadow: inset 2px 2px 5px #b8b9be, inset -3px -3px 7px #fff;
+  box-shadow: var(--shadow2);
 }
 .certificates .card .imgContainer {
   position: relative;
@@ -553,10 +532,9 @@ label {
 }
 .project .imgContainer {
   border: 0.0625rem solid transparent;
-  border-color: #d1d9e6;
-  box-shadow: 6px 6px 12px #b8b9be, -6px -6px 12px #fff;
+  box-shadow: var(--shadow1);
   border-radius: 10px;
-  background-color: #e6e7ee;
+  background-color: var(--bg-color);
   position: relative;
   overflow: hidden;
   max-width: 600px;
@@ -564,28 +542,25 @@ label {
   min-width: 200px;
 }
 .project .imgContainer:hover {
-  border-color: #e6e7ee;
-  box-shadow: inset 2px 2px 5px #b8b9be, inset -3px -3px 7px #fff;
+  box-shadow: var(--shadow2);
 }
 .project .projectDetails {
   border: 0.0625rem solid transparent;
-  border-color: #d1d9e6;
-  box-shadow: 6px 6px 12px #b8b9be, -6px -6px 12px #fff;
+  box-shadow: var(--shadow1);
   border-radius: 10px;
-  background-color: #e6e7ee;
+  background-color: var(--bg-color);
   flex: 0.8;
   padding: 10px;
 }
 .project .projectDetails:hover {
-  border-color: #e6e7ee;
-  box-shadow: inset 2px 2px 5px #b8b9be, inset -3px -3px 7px #fff;
+  box-shadow: var(--shadow2);
 }
 .project .projectLinks {
   margin-top: 10px;
 }
 .project .projectLinks a {
   font-weight: bold;
-  color: #31344b;
+  color: var(--text-color);
 }
 .project .projectLinks a:hover {
   text-decoration: underline;

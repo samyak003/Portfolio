@@ -8,26 +8,28 @@
 html {
 	scroll-behavior: smooth;
 }
-$bg-color: #e6e7ee;
-$text-color: #31344b;
-
+#root {
+	$bg-color: #e6e7ee;
+	$text-color: #31344b;
+	$shadow1: 6px 6px 12px #b8b9be, -6px -6px 12px #fff;
+	$shadow2: 2px 2px 5px #b8b9be, inset -3px -3px 7px #fff;
+}
 @mixin theme1 {
 	border: 0.0625rem solid transparent;
-	border-color: #d1d9e6;
-	box-shadow: 6px 6px 12px #b8b9be, -6px -6px 12px #fff;
+	box-shadow: var(--shadow1);
 	border-radius: 10px;
-	background-color: $bg-color;
+	background-color: var(--bg-color);
 }
 @mixin theme2 {
-	border-color: $bg-color;
-	box-shadow: inset 2px 2px 5px #b8b9be, inset -3px -3px 7px #fff;
+	box-shadow: var(--shadow2);
 }
 
 body {
-	background-color: $bg-color;
+	background-color: var(--bg-color);
 	font-family: "Raleway", sans-serif;
-	color: $text-color;
+	color: var(--text-color);
 	letter-spacing: 1px;
+	transition: background-color 0.3s linear;
 }
 h1 {
 	font-size: clamp(2.8rem, 3.5rem, 4rem);
@@ -93,7 +95,7 @@ label {
 		@include theme2;
 	}
 	font-family: "Raleway", sans-serif;
-	color: $text-color;
+	color: var(--text-color);
 }
 .section {
 	display: grid;
@@ -138,7 +140,7 @@ label {
 	top: 0;
 	left: 0;
 	min-height: 100%;
-	background-color: $bg-color;
+	background-color: var(--bg-color);
 	z-index: 10;
 	@include theme1();
 }
@@ -159,7 +161,7 @@ label {
 		align-items: center;
 		justify-content: flex-start;
 		font-size: 1.3rem;
-		color: $text-color;
+		color: var(--text-color);
 		padding: 10px;
 		p {
 			font-size: 1.1rem;
@@ -228,7 +230,7 @@ label {
 .bar3 {
 	width: 30px;
 	height: 5px;
-	background-color: $text-color;
+	background-color: var(--text-color);
 	transition: 0.4s;
 }
 .bar2 {
@@ -338,7 +340,7 @@ label {
 		}
 	}
 	a {
-		color: $text-color;
+		color: var(--text-color);
 		font-weight: bold;
 		&:hover {
 			text-decoration: underline;
@@ -393,7 +395,7 @@ label {
 		section {
 			padding: 15px;
 		}
-		color: $text-color;
+		color: var(--text-color);
 		&:hover {
 			p {
 				text-decoration: underline;
@@ -535,7 +537,7 @@ label {
 		margin-top: 10px;
 		a {
 			font-weight: bold;
-			color: $text-color;
+			color: var(--text-color);
 		}
 		a:hover {
 			text-decoration: underline;
