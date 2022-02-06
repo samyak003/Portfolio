@@ -60,11 +60,13 @@ function Projects() {
 	];
 	return (
 		<div className="projects section" id="projects">
-			<h1 className="heading">Projects</h1>
+			<h1 className="heading" data-aos="fade-up">
+				Projects
+			</h1>
 			<div className="content">
 				<ul className="projectList">
 					{projects.map((project, index) => (
-						<li className="project" key={index}>
+						<li className="project" key={index} data-aos="fade-up">
 							<h2 className="projectTitle">{project.title}</h2>
 							<main>
 								<div className="imgContainer">

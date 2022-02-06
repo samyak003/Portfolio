@@ -16,11 +16,13 @@ function Skills() {
 	];
 	return (
 		<div className="skills section" id="skills">
-			<h1 className="heading">Skills</h1>
+			<h1 className="heading" data-aos="fade-up">
+				Skills
+			</h1>
 			<main>
 				<ul className="cards">
 					{skills.map((skill, index) => (
-						<li className="card" key={index}>
+						<li className="card" key={index} data-aos="fade-up">
 							<div className="logo-container">
 								<Suspense fallback={<Loading />}>
 									<Img src={skill.img} alt="" />

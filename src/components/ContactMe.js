@@ -10,10 +10,12 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 function ContactMe() {
 	return (
 		<div className="contactMe section" id="contactMe">
-			<h1 className="heading">Contact Me</h1>
+			<h1 className="heading" data-aos="fade-up">
+				Contact Me
+			</h1>
 			<main>
 				<ul className="contactMe__socials">
-					<li className="contactMe__socialsLink">
+					<li className="contactMe__socialsLink" data-aos="fade-up">
 						<a
 							href="https://github.com/samyak003"
 							target="blank"
@@ -27,7 +29,7 @@ function ContactMe() {
 							</section>
 						</a>
 					</li>
-					<li className="contactMe__socialsLink">
+					<li className="contactMe__socialsLink" data-aos="fade-up">
 						<a
 							href="https://www.linkedin.com/in/samyak003/"
 							target="blank"
@@ -41,7 +43,7 @@ function ContactMe() {
 							</section>
 						</a>
 					</li>
-					<li className="contactMe__socialsLink">
+					<li className="contactMe__socialsLink" data-aos="fade-up">
 						<a
 							href="https://instagram.com/samyak003"
 							target="blank"
@@ -55,7 +57,7 @@ function ContactMe() {
 							</section>
 						</a>
 					</li>
-					<li className="contactMe__socialsLink">
+					<li className="contactMe__socialsLink" data-aos="fade-up">
 						<a
 							href="https://twitter.com/samyak003"
 							target="blank"
@@ -77,27 +79,27 @@ function ContactMe() {
 					data-netlify="true"
 				>
 					<input type="hidden" name="form-name" value="contact-form" />
-					<div className="inputField">
+					<div className="inputField" data-aos="fade-up">
 						<label htmlFor="name">Name</label>
 						<br />
 						<input type="text" name="name" id="name" required />
 					</div>
-					<div className="inputField">
+					<div className="inputField" data-aos="fade-up">
 						<label htmlFor="email">Email</label>
 						<br />
 						<input type="email" id="email" name="email" required />
 					</div>
-					<div className="inputField">
+					<div className="inputField" data-aos="fade-up">
 						<label htmlFor="contactno">Contact No.</label>
 						<br />
 						<input type="number" name="contactno" id="contactno" required />
 					</div>
-					<div className="inputField">
+					<div className="inputField" data-aos="fade-up">
 						<label htmlFor="description">Description</label>
 						<br />
 						<textarea rows="5" name="description" id="description" required />
 					</div>
-					<div className="inputField">
+					<div className="inputField" data-aos="fade-up">
 						<button type="submit" className="btn">
 							Send Message
 						</button>

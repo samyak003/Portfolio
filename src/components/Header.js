@@ -62,7 +62,7 @@ function Header() {
 		document.querySelector(".container").classList.toggle("change");
 	};
 	return (
-		<section className="header">
+		<section className="header" data-aos="fade-up">
 			<ul className="header__list">
 				<li className="header__listItem menubtn" onClick={() => toggle()}>
 					<div className="container">

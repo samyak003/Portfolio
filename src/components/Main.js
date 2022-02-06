@@ -5,7 +5,7 @@ import React from "react";
 function Main() {
 	return (
 		<div className="main section" id="main">
-			<main>
+			<main data-aos="fade-up">
 				<h1 className="main__heading">
 					Hi, I am <br />
 					Samyak Jain

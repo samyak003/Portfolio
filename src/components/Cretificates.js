@@ -31,10 +31,12 @@ function Cretificates() {
 	];
 	return (
 		<div className="certificates section" id="certificates">
-			<h1 className="heading">Certificates</h1>
+			<h1 className="heading" data-aos="fade-up">
+				Certificates
+			</h1>
 			<main>
 				{certificates.map((certificate, index) => (
-					<div className="card" key={index}>
+					<div className="card" key={index} data-aos="fade-up">
 						<div className="imgContainer">
 							<Suspense fallback={<Loading />}>
 								<Img src={certificate.img} alt="" />
