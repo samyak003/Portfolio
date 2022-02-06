@@ -93,7 +93,7 @@ label {
   box-shadow: var(--shadow1);
   border-radius: 10px;
   background-color: var(--bg-color);
-  font-family: "Raleway", sans-serif;
+  font-family: "Raleway", sans-serif !important;
   color: var(--text-color);
 }
 .btn:hover {

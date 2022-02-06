@@ -62,7 +62,7 @@ function Header() {
 		document.querySelector(".container").classList.toggle("change");
 	};
 	return (
-		<section className="header" data-aos="fade-up">
+		<section className="header" id="header" data-aos="fade-up">
 			<ul className="header__list">
 				<li className="header__listItem menubtn" onClick={() => toggle()}>
 					<div className="container">
@@ -72,7 +72,11 @@ function Header() {
 					</div>
 				</li>
 				{links.map((link, index) => (
-					<li className="header__listItem" onClick={() => toggleSmallScr()}>
+					<li
+						className="header__listItem"
+						key={index}
+						onClick={() => toggleSmallScr()}
+					>
 						<a href={link.href}>
 							<FontAwesomeIcon icon={link.icon} />
 							<p>{link.title}</p>
@@ -85,7 +89,7 @@ function Header() {
 						toggleSmallScr();
 					}}
 				>
-					<a onClick={() => setDarkTheme(!darkTheme)}>
+					<a href="#header" onClick={() => setDarkTheme(!darkTheme)}>
 						<FontAwesomeIcon icon={!darkTheme ? faMoon : faSun} />
 						<p>{!darkTheme ? "Dark" : "Light"} Mode</p>
 					</a>

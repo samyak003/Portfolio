@@ -95,7 +95,7 @@ label {
 	&:hover {
 		@include theme2;
 	}
-	font-family: "Raleway", sans-serif;
+	font-family: "Raleway", sans-serif !important;
 	color: var(--text-color);
 }
 .section {
