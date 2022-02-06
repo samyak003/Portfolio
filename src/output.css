@@ -381,11 +381,12 @@ label {
   transform: translateY(-101%);
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1200px) {
   .aboutMe .heading {
     margin-bottom: 30px;
   }
   .aboutMe .content {
+    max-width: 650px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -575,7 +576,7 @@ label {
 @media screen and (max-width: 1200px) {
   .project main {
     flex-direction: column !important;
-    width: 80vw;
+    max-width: 650px;
   }
   .project .imgContainer {
     margin-bottom: 20px;

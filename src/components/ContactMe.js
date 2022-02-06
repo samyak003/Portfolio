@@ -57,7 +57,11 @@ function ContactMe() {
 							</section>
 						</a>
 					</li>
-					<li className="contactMe__socialsLink" data-aos="fade-up">
+					<li
+						className="contactMe__socialsLink"
+						data-aos="fade-up"
+						data-aos-offset="10"
+					>
 						<a
 							href="https://twitter.com/samyak003"
 							target="blank"
@@ -99,7 +103,7 @@ function ContactMe() {
 						<br />
 						<textarea rows="5" name="description" id="description" required />
 					</div>
-					<div className="inputField" data-aos="fade-up">
+					<div className="inputField" data-aos="fade-up" data-aos-offset="10">
 						<button type="submit" className="btn">
 							Send Message
 						</button>

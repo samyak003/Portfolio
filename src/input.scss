@@ -361,12 +361,13 @@ label {
 .imgContainer:hover .img-overlay {
 	transform: translateY(-101%);
 }
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1200px) {
 	.aboutMe {
 		.heading {
 			margin-bottom: 30px;
 		}
 		.content {
+			max-width: 650px;
 			display: flex;
 			flex-direction: column;
 			align-items: center;
@@ -551,7 +552,7 @@ label {
 	@media screen and (max-width: 1200px) {
 		main {
 			flex-direction: column !important;
-			width: 80vw;
+			max-width: 650px;
 		}
 		.imgContainer {
 			margin-bottom: 20px;
