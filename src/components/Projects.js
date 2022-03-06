@@ -1,5 +1,8 @@
 import React, { Suspense } from "react";
 import Loading from "./Loading";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faLink } from "@fortawesome/free-solid-svg-icons";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
 const Img = React.lazy(() => import("./Img"));
 
 function Projects() {
@@ -83,12 +86,12 @@ function Projects() {
 									<div className="projectLinks">
 										<p>
 											<a href={project.link} target="blank" rel="noreferrer">
-												Project Link
+												Project Link <FontAwesomeIcon icon={faLink} />
 											</a>
 										</p>
 										<p>
 											<a href={project.link2} target="blank" rel="noreferrer">
-												Github Repo
+												Github Repo <FontAwesomeIcon icon={faGithub} />
 											</a>
 										</p>
 									</div>
