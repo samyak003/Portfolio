@@ -8,6 +8,13 @@ const Img = React.lazy(() => import("./Img"));
 function Projects() {
 	const projects = [
 		{
+			title: "Coders Bake",
+			img: "./images/codersbake.png",
+			description: `Coders Bake is a team project where we provide news and knowledge thorugh newsletter and social media posts. The website is fully responsive, SEO optimized, has email auth, lazy loading. Technologies used in this web app are - Html, Javascript, React.Js, React Spring, React Router, TailwindCss, Netlify Functions, Firebase & Heroku. This website also
+									qualifies as a PWA.`,
+			link: "https://codersbake.in",
+		},
+		{
 			title: "Amazon Clone",
 			img: "./images/amazon_clone.png",
 			description: `This project is based on e-commerce websites. It is fully
@@ -89,11 +96,13 @@ function Projects() {
 												Project Link <FontAwesomeIcon icon={faLink} />
 											</a>
 										</p>
-										<p>
-											<a href={project.link2} target="blank" rel="noreferrer">
-												Github Repo <FontAwesomeIcon icon={faGithub} />
-											</a>
-										</p>
+										{project.link2 && (
+											<p>
+												<a href={project.link2} target="blank" rel="noreferrer">
+													Github Repo <FontAwesomeIcon icon={faGithub} />
+												</a>
+											</p>
+										)}
 									</div>
 								</div>
 							</main>

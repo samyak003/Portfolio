@@ -1,4 +1,4 @@
-import { faArrowDown } from "@fortawesome/free-solid-svg-icons";
+import { faDownload } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 
@@ -16,8 +16,8 @@ function Main() {
 				</h1>
 			</main>
 			<section>
-				<a href="#aboutMe" className="btn">
-					Explore <FontAwesomeIcon icon={faArrowDown} />
+				<a href="/Resume.pdf" className="btn" download>
+					Download Resume <FontAwesomeIcon icon={faDownload} />
 				</a>
 			</section>
 		</div>
