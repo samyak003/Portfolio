@@ -10,9 +10,9 @@ function AboutMe() {
 			</h1>
 			<div className="content">
 				<p className="aboutMe__para" data-aos="fade-up">
-					Heya User, I am Samyak, Front-End Developer as well as a First-year
+					Heya User, I am Samyak, Front-End Developer as well as a Second-year
 					undergraduate student. I am currently pursuing BCA from Christ
-					University (Delhi NCR). I have experience of 2 years in making various
+					University (Delhi NCR). I have experience of 3 years in making various
 					kinds of web apps as you can see my <a href="#projects">Projects</a>.
 					I like web development as it gives me joy and brings ideas to my mind
 					and it makes me feel stressed out and relaxed. I know a lot of

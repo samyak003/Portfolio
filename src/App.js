@@ -1,13 +1,13 @@
-import { useEffect } from "react";
-import AboutMe from "./components/AboutMe";
-import ContactMe from "./components/ContactMe";
-import Cretificates from "./components/Cretificates";
-import Header from "./components/Header";
-import Main from "./components/Main";
-import Projects from "./components/Projects";
-import Skills from "./components/Skills";
+import { useEffect, Suspense, lazy } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
+const AboutMe = lazy(() => import("./components/AboutMe"));
+const ContactMe = lazy(() => import("./components/ContactMe"));
+const Cretificates = lazy(() => import("./components/Cretificates"));
+const Header = lazy(() => import("./components/Header"));
+const Main = lazy(() => import("./components/Main"));
+const Projects = lazy(() => import("./components/Projects"));
+const Skills = lazy(() => import("./components/Skills"));
 
 function App() {
 	useEffect(() => {
@@ -15,14 +15,29 @@ function App() {
 	}, []);
 	return (
 		<div className="App">
+			<Suspense fallback={<></>}>
+
 			<Header />
+			</Suspense>
 			<div className="not-header">
-				<Main />
-				<AboutMe />
-				<Skills />
-				<Projects />
-				<Cretificates />
-				<ContactMe />
+				<Suspense fallback={<></>}>
+					<Main />
+				</Suspense>
+				<Suspense fallback={<></>}>
+					<AboutMe />
+				</Suspense>
+				<Suspense fallback={<></>}>
+					<Skills />
+				</Suspense>
+				<Suspense fallback={<></>}>
+					<Projects />
+				</Suspense>
+				<Suspense fallback={<></>}>
+					<Cretificates />
+				</Suspense>
+				<Suspense fallback={<></>}>
+					<ContactMe />
+				</Suspense>
 			</div>
 		</div>
 	);
