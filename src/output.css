@@ -582,4 +582,66 @@ label {
   }
 }
 
+.experience {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.experience .sessions {
+  margin-top: 5rem;
+  border-radius: 12px;
+  position: relative;
+}
+.experience li {
+  padding-bottom: 1.5rem;
+  border-left: 1px solid;
+  position: relative;
+  padding-left: 20px;
+  margin-left: 10px;
+}
+.experience li .company {
+  font-weight: bold;
+}
+.experience li .position {
+  font-size: medium;
+}
+.experience li:last-child {
+  border: 0px;
+  padding-bottom: 0;
+}
+.experience li:before {
+  content: "";
+  width: 15px;
+  height: 15px;
+  background: white;
+  border: 1px solid;
+  border-radius: 50%;
+  position: absolute;
+  left: -10px;
+  top: 0px;
+}
+.experience .time {
+  font-weight: 500;
+}
+@media screen and (min-width: 601px) {
+  .experience .time {
+    font-size: 0.9rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  .experience .time {
+    margin-bottom: 0.3rem;
+    font-size: 0.85rem;
+  }
+}
+.experience p {
+  line-height: 1.5;
+  margin-top: 0.4rem;
+}
+@media screen and (max-width: 600px) {
+  .experience p {
+    font-size: 0.9rem;
+  }
+}
+
 /*# sourceMappingURL=output.css.map */

@@ -1,6 +1,9 @@
 import { useEffect, Suspense, lazy } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import Works from "./components/Works";
+import Experience from "./components/Experience";
+import Snapchat from "./components/Snapchat";
 const AboutMe = lazy(() => import("./components/AboutMe"));
 const ContactMe = lazy(() => import("./components/ContactMe"));
 const Cretificates = lazy(() => import("./components/Cretificates"));
@@ -16,8 +19,7 @@ function App() {
 	return (
 		<div className="App">
 			<Suspense fallback={<></>}>
-
-			<Header />
+				<Header />
 			</Suspense>
 			<div className="not-header">
 				<Suspense fallback={<></>}>
@@ -27,10 +29,16 @@ function App() {
 					<AboutMe />
 				</Suspense>
 				<Suspense fallback={<></>}>
-					<Skills />
+					<Experience />
+				</Suspense>
+				<Suspense fallback={<></>}>
+					<Works />
 				</Suspense>
 				<Suspense fallback={<></>}>
 					<Projects />
+				</Suspense>
+				<Suspense fallback={<></>}>
+					<Skills />
 				</Suspense>
 				<Suspense fallback={<></>}>
 					<Cretificates />

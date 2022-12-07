@@ -1,3 +1,4 @@
+import { faSnapchatGhost } from "@fortawesome/free-brands-svg-icons";
 import {
 	faCertificate,
 	faHome,
@@ -7,6 +8,8 @@ import {
 	faTasks,
 	faUserCircle,
 	faSun,
+	faCode,
+	faLayerGroup,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React, { useState, useEffect } from "react";
@@ -19,10 +22,17 @@ function Header() {
 	const links = [
 		{ href: "#main", title: "Main", icon: faHome },
 		{ href: "#aboutMe", title: "About Me", icon: faUserCircle },
-		{ href: "#skills", title: "Skills", icon: faPencilRuler },
+		{ href: "#experience", title: "Experience", icon: faCode },
+		{ href: "#works", title: "Works", icon: faLayerGroup },
 		{ href: "#projects", title: "Projects", icon: faTasks },
+		{ href: "#skills", title: "Skills", icon: faPencilRuler },
 		{ href: "#certificates", title: "Certificates", icon: faCertificate },
 		{ href: "#contactMe", title: "Contact Me", icon: faIdBadge },
+		{
+			href: "https://lensstudio.snapchat.com/creator/wVkTUDm9Qe43KKSgbCXrjA",
+			title: "Snapchat Creator Profile",
+			icon: faSnapchatGhost,
+		},
 	];
 	const toggleSmallScr = () => {
 		if (window.innerWidth <= 700) {
