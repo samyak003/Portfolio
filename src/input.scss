@@ -195,6 +195,8 @@ label {
 }
 .open {
 	.header__list {
+		overflow-y: scroll;
+		max-height: 100vh;
 		.header__listItem {
 			margin: 10px;
 			a {
@@ -511,6 +513,7 @@ label {
 			overflow: hidden;
 		}
 		.card-details {
+			max-width: 400px;
 			span {
 				font-weight: bold;
 			}
@@ -588,6 +591,7 @@ label {
 		margin-top: 5rem;
 		border-radius: 12px;
 		position: relative;
+		padding: 0 20px;
 	}
 	li {
 		padding-bottom: 1.5rem;
@@ -601,6 +605,10 @@ label {
 		.position {
 			font-size: medium;
 		}
+		.url {
+			color: var(--text-color);
+			text-decoration: underline;
+		}
 		&:last-child {
 			border: 0px;
 			padding-bottom: 0;
@@ -609,7 +617,7 @@ label {
 			content: "";
 			width: 15px;
 			height: 15px;
-			background: white;
+			background: var(--text-color);
 			border: 1px solid;
 			border-radius: 50%;
 			position: absolute;

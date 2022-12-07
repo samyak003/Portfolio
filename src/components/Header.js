@@ -27,12 +27,12 @@ function Header() {
 		{ href: "#projects", title: "Projects", icon: faTasks },
 		{ href: "#skills", title: "Skills", icon: faPencilRuler },
 		{ href: "#certificates", title: "Certificates", icon: faCertificate },
-		{ href: "#contactMe", title: "Contact Me", icon: faIdBadge },
 		{
 			href: "https://lensstudio.snapchat.com/creator/wVkTUDm9Qe43KKSgbCXrjA",
 			title: "Snapchat Creator Profile",
 			icon: faSnapchatGhost,
 		},
+		{ href: "#contactMe", title: "Contact Me", icon: faIdBadge },
 	];
 	const toggleSmallScr = () => {
 		if (window.innerWidth <= 700) {

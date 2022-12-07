@@ -5,6 +5,24 @@ const Img = React.lazy(() => import("./Img"));
 function Cretificates() {
 	const certificates = [
 		{
+			title: "Workshop Attendee",
+			year: "2022",
+			from: "Binghamton University",
+			img: "./images/Binghamton.webp",
+		},
+		{
+			title: "Internship Completion Certificate",
+			year: "2022",
+			from: "Google, Smartinternz",
+			img: "./images/smartinternz_android.png",
+		},
+		{
+			title: "The Fundamentals of Digital Marketing",
+			year: "2022",
+			from: "Google",
+			img: "./images/digital marketing.webp",
+		},
+		{
 			title: "1st Position in I-Hack Junior",
 			year: "2021",
 			from: "IIT Bombay, Codingal",

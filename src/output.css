@@ -190,6 +190,10 @@ label {
   box-shadow: var(--shadow2);
 }
 
+.open .header__list {
+  overflow-y: scroll;
+  max-height: 100vh;
+}
 .open .header__list .header__listItem {
   margin: 10px;
 }
@@ -513,6 +517,9 @@ label {
   margin: 10px auto;
   overflow: hidden;
 }
+.certificates .card .card-details {
+  max-width: 400px;
+}
 .certificates .card .card-details span {
   font-weight: bold;
 }
@@ -591,6 +598,7 @@ label {
   margin-top: 5rem;
   border-radius: 12px;
   position: relative;
+  padding: 0 20px;
 }
 .experience li {
   padding-bottom: 1.5rem;
@@ -605,6 +613,10 @@ label {
 .experience li .position {
   font-size: medium;
 }
+.experience li .url {
+  color: var(--text-color);
+  text-decoration: underline;
+}
 .experience li:last-child {
   border: 0px;
   padding-bottom: 0;
@@ -613,7 +625,7 @@ label {
   content: "";
   width: 15px;
   height: 15px;
-  background: white;
+  background: var(--text-color);
   border: 1px solid;
   border-radius: 50%;
   position: absolute;

@@ -3,7 +3,6 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import Works from "./components/Works";
 import Experience from "./components/Experience";
-import Snapchat from "./components/Snapchat";
 const AboutMe = lazy(() => import("./components/AboutMe"));
 const ContactMe = lazy(() => import("./components/ContactMe"));
 const Cretificates = lazy(() => import("./components/Cretificates"));
