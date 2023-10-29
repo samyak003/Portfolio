@@ -10,13 +10,13 @@ function Experience() {
 		{
 			company: "Coders Bake",
 			position: "Founder",
-			time: "March 2022 - Present",
+			time: "March 2022 - April 2023",
 			url: { title: "Website", href: "https://codersbake.in" },
 		},
 		{
 			company: "Newton School Coding Club, Christ University (Delhi NCR)",
 			position: "President",
-			time: "September 2022 - Present",
+			time: "September 2022 - May 2023",
 			url: { title: "Letter of Appointment", href: "./images/nscc.pdf" },
 		},
 		{
@@ -29,24 +29,34 @@ function Experience() {
 			},
 		},
 		{
+			company: "BuildMyBody",
+			position: "Web Developer",
+			time: "July 2023 - Present",
+		},
+		{
 			company: "School of Sciences, Christ University",
 			position: "Web dev. Intern (Blog-sos)",
-			time: "October 2022 - Present",
+			time: "October 2022 - December 2022",
 			url: { title: "Website", href: "https://blog-sos.netlify.app" },
 		},
 		{
 			company: "Snapchat Opinion Leader by Under25",
 			position: "Participant",
-			time: "September 2022 - Present",
+			time: "September 2022 - December 2022",
 			url: {
-				title: "Letter of Acceptance",
-				href: "./images/Letter of Acceptance.pdf",
+				title: "Letter of Recommendation",
+				href: "./images/Under25.pdf",
 			},
 		},
 		{
 			company: "Ambimed",
 			position: "Tech Intern",
-			time: "November 2022 - Present",
+			time: "November 2022 - July 2023",
+		},
+		{
+			company: "Gifto Locks",
+			position: "Web Developer",
+			time: "January 2021 - March 2021",
 		},
 	];
 	return (
