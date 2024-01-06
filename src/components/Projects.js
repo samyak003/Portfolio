@@ -8,55 +8,41 @@ const Img = React.lazy(() => import("./Img"));
 function Projects() {
 	const projects = [
 		{
+			title: "Dropbox Clone",
+			img: "./images/dropbox_clone.png",
+			description: `This cloud storage website is fully responsive and features upload and rename functionalities, drag-and-drop capabilities, and secure payment handling through Stripe. It includes a visually pleasing Dark Mode and employs Clerk.js for user authentication. Technologies utilized in this project encompass HTML, CSS, TypeScript, Next.js, React.js, Zustand for state management, Firebase, Clerk.js, Stripe, and Netlify for hosting.`,
+			link: "https://dropboxclone.samyak003.in",
+			link2: "https://github.com/samyak003/dropbox_clone",
+		},
+		{
 			title: "Amazon Clone",
 			img: "./images/amazon_clone.png",
-			description: `This project is based on e-commerce websites. It is fully
-									responsive design, has cart functionality, product pages,
-									delivery notifications, Payment handler using “Stripe”, Order
-									History, Email auth., lazy loading, product review system.
-									Technologies used in this website are - Html, Css, Javascript,
-									React.Js, React Router, React Context Api, Scss, Firebase,
-									Stripe, Heroku(backend for stripe). This website also
-									qualifies as a PWA.`,
+			description: `
+This e-commerce project features a responsive design with cart functionality, detailed product pages, delivery notifications, and secure payments through "Stripe." It includes Order History, email authentication, and a product review system. Technologies used are HTML, CSS, JavaScript, React.js, React Router, React Context API, SCSS, Firebase, Stripe, and Heroku for backend integration. The website is also a Progressive Web App (PWA), ensuring optimal user experience across devices.
+`,
 			link: "https://amazonclone.samyak003.in",
 			link2: "https://github.com/samyak003/amazon-clone",
 		},
 		{
 			title: "Music",
 			img: "./images/music.png",
-			description: `This project is based on a music streaming app. It is fully
-									responsive, uses spotify auth., spotify web api to stream
-									songs directly from spotify. A user can search for their fav.
-									songs, albums, playlists and podcasts. Technologies used in
-									this website are - Html, Css, Javascript, React.Js, React
-									Router, React Context Api, Material Ui, Scss, Spotify Api.`,
+			description: `
+This music streaming app project boasts full responsiveness and seamlessly integrates with Spotify through Spotify authentication and the Spotify Web API for direct song streaming. Users can easily search for their favorite songs, albums, playlists, and podcasts. The technology stack includes HTML, CSS, JavaScript, React.js, React Router, React Context API, Material UI, SCSS, and the Spotify API. This ensures a user-friendly and feature-rich experience for music enthusiasts.`,
 			link: "https://music.samyak003.in",
 			link2: "https://github.com/samyak003/Music",
 		},
 		{
 			title: "Whatsapp Clone",
 			img: "./images/whatsapp_clone.png",
-			description: `This project is based on a text cloud messenging app. It is
-									fully responsive, uses google auth (using firebase auth).
-									Users can create chat rooms, have their custom avatars, send
-									messages in different chat room, chat room's creator can clear
-									the chat too. Technologies used in this website are - Html,
-									Css, Javascript, React.Js, React Context Api, React Router,
-									Material Ui, Firebase.`,
+			description: `
+This text cloud messaging app project is entirely responsive and integrates Google authentication through Firebase auth. Users have the capability to create chat rooms, personalize avatars, and exchange messages within various chat rooms. Additionally, chat room creators can manage conversations by clearing the chat. The technology stack comprises HTML, CSS, JavaScript, React.js, React Context API, React Router, Material UI, and Firebase. This combination ensures a user-friendly and feature-rich platform for seamless communication.`,
 			link: "https://whatsappclone.samyak003.in",
 			link2: "https://github.com/samyak003/Whatsapp-Clone",
 		},
 		{
 			title: "Instagram Clone",
 			img: "./images/instagram_clone.png",
-			description: `This project is based on a social media website. It is fully
-									responsive, users email auth. Users can post images with
-									caption, comment on other's post, change their bio and display
-									picture, can follow any user, have a count of follow and
-									followers, dark mode/light mode toggle. Technologies used in
-									this website are - Html, Javascript, React.Js, React Context
-									Api, React Router, TailwindCss, Firebase. This website also
-									qualifies as a PWA.`,
+			description: `This social media website project features full responsiveness and utilizes email authentication for user access. Users can post images with captions, engage in commenting on others' posts, customize their bio and display picture, follow other users, and track their follower count. The website also includes a convenient dark mode/light mode toggle. The technology stack includes HTML, JavaScript, React.js, React Context API, React Router, Tailwind CSS, and Firebase for a seamless and secure user experience. Notably, this website qualifies as a Progressive Web App (PWA), ensuring enhanced accessibility and performance across various devices.`,
 			link: "https://instagramclone.samyak003.in",
 			link2: "https://github.com/samyak003/Instagram-Clone",
 		},

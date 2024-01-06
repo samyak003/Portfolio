@@ -10,18 +10,19 @@ function AboutMe() {
 			</h1>
 			<div className="content">
 				<p className="aboutMe__para" data-aos="fade-up">
-					Heya User, I am Samyak, Front-End Developer as well as a Third-year
-					undergraduate student. I am currently pursuing BCA from Christ
-					University (Delhi NCR). I have experience of 3 years in making various
-					kinds of web apps as you can see my <a href="#projects">Projects</a>.
-					I like web development as it gives me joy and brings ideas to my mind
-					and it makes me feel stressed out and relaxed. I know a lot of
-					front-end libraries as you can see in the{" "}
-					<a href="#skills">Skills Section </a>. I also create Snapchat lenses
-					as hobby. Checkout my lenses in{" "}
+					Greetings! I'm Samyak, a passionate Front-End Developer and a
+					final-year undergraduate student pursuing BCA at Christ University
+					(Delhi NCR). With a 3-year experience in crafting diverse web apps, my{" "}
+					<a href="#projects">Projects</a> showcase the breadth of my skills.
+					Web development not only brings me joy but also sparks creative ideas,
+					serving as a source of both stress relief and relaxation. Proficient
+					in various front-end libraries, as indicated in the{" "}
+					<a href="#skills">Skills Section </a>, I also indulge in creating
+					Snapchat lenses as a hobby. Explore my lenses on my{" "}
 					<a href="https://lensstudio.snapchat.com/creator/wVkTUDm9Qe43KKSgbCXrjA">
 						Snapchat Creator Profile
 					</a>
+					.
 				</p>
 				<div className="imgContainer" data-aos="fade-up">
 					<Suspense fallback={<Loading />}>
